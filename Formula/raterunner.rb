@@ -5,21 +5,21 @@
 class Raterunner < Formula
   desc "CLI tool for managing SaaS billing configurations as code"
   homepage "https://github.com/raterunner/cli"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/raterunner/cli/releases/download/v0.0.2/raterunner_0.0.2_darwin_amd64.tar.gz"
-      sha256 "5260fd4d18741073bccf9a8d77094ff529166b21c2df6ec76ffd288278e2372c"
+      url "https://github.com/raterunner/cli/releases/download/v0.0.3/raterunner_0.0.3_darwin_amd64.tar.gz"
+      sha256 "668ba1ef8cc232cbdd4e2d48ccafbb4cc8766ea5ca2282a9f66cb3a088180fd1"
 
       def install
         bin.install "raterunner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/raterunner/cli/releases/download/v0.0.2/raterunner_0.0.2_darwin_arm64.tar.gz"
-      sha256 "04a9290a932ca46cdb75b3a72da40f7e2a97aa600a03d5bdff2aa516644eaede"
+      url "https://github.com/raterunner/cli/releases/download/v0.0.3/raterunner_0.0.3_darwin_arm64.tar.gz"
+      sha256 "50861b5ab9e314453ff29236ff533ea1aa149bb4c27897fe6a41672d34b4a5c1"
 
       def install
         bin.install "raterunner"
@@ -29,15 +29,15 @@ class Raterunner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raterunner/cli/releases/download/v0.0.2/raterunner_0.0.2_linux_amd64.tar.gz"
-      sha256 "b014e52d92ba07d102b55e7898f8d8fa24e23743c9b50d9d1963445609f603c6"
+      url "https://github.com/raterunner/cli/releases/download/v0.0.3/raterunner_0.0.3_linux_amd64.tar.gz"
+      sha256 "dd8a4afc9e541a4b868276e92a83d1507c9e97f98b47a449046b3d385e9e8aff"
       def install
         bin.install "raterunner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raterunner/cli/releases/download/v0.0.2/raterunner_0.0.2_linux_arm64.tar.gz"
-      sha256 "f76812a165d444528f9678cae3a24d07fd94e308cc3ddda9220ec59a085554ec"
+      url "https://github.com/raterunner/cli/releases/download/v0.0.3/raterunner_0.0.3_linux_arm64.tar.gz"
+      sha256 "5815d7641c14111b8608b9750a3d3a83f2c569328884e3e8e7a31405a928db87"
       def install
         bin.install "raterunner"
       end
